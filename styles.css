@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Baskervville";
+    src: url(fonts/Baskervville-Regular.otf) format("truetype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: blue;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+
+	box-sizing: border-box;
+}
+
+.marquee {
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+}
+
+.poire_rebond {
+	width: 10%;
+	height: auto;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.texte {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	font-family: Arial;
+	font-style: italic;
+	font-weight: lighter;
+
+	color: white;
+}
+
+
+.contenu {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.images {
+	display: grid;
+	grid-template-columns: 1fr;
+
+
+	gap: 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.texte {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contenu {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+	.images {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+	}
+}
+
